@@ -23,7 +23,7 @@ public class BasicBotTele extends OpMode
         telemetry.addData("Right Encod Ct: ", basicBot.getDriveRightOne().getCurrentPosition());
         telemetry.addData("Left Encod Ct: ", basicBot.getDriveLeftOne().getCurrentPosition());
         telemetry.update();
-        basicBot.driveMotors(-gamepad1.left_stick_y, -gamepad1.right_stick_y);
+        basicBot.driveMotors(gamepad1.left_stick_y, gamepad1.right_stick_y);
     }
 
     @Override
